@@ -11,8 +11,8 @@ var close = document.getElementsByClassName('close');
 //default when load up
 preview_img.src = imgs[0].src;
 
-close[0].addEventListener('click',(e)=>{
 
+close[0].addEventListener('click',(e)=>{
 
     preview_div.style.display = "none";
 });
@@ -22,7 +22,7 @@ for(let x =0;x<imgs.length;x++)
 {
     imgs[x].addEventListener('click',function(){
 
-        if(preview_div.style.display = "none")
+        if(preview_div.style.display == "none")
         {
             preview_div.style.display = "flex";
         }
